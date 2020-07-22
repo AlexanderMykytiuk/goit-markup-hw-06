@@ -580,7 +580,7 @@ img {
 }
 
 .social-icons__join,
-.active__join {
+.form__label--title {
   display: block;
   margin-bottom: 20px;
 
@@ -591,6 +591,7 @@ img {
 
 .social-icons--footer {
   padding-bottom: 56px;
+  margin-right: 90px
 }
 
 .soc-icon-list {
@@ -606,28 +607,32 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.active__title {
-  color: var(--white-color);
-
-  font-family: Roboto, sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
+.form__label {
   display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
+  flex-direction: column; 
+  justify-content: flex-end; 
 }
 
-.active__submit {
+.form__input {
+  width: 358px;
+  height: 50px;
+  background-color:var(--footer-bg-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.form__submit {
   display: inline-flex;
+  
   width: 200px;
   height: 50px;
-  
+
   justify-content: center;
   align-items: center;
   
-  margin-top: 36px;
+  margin-left: 12.5px;
 
   border: none;
   border-radius: 4px;
@@ -639,7 +644,7 @@ img {
   cursor: pointer;
 }
 
-.active__submit::after {
+.form__submit::after {
   content: "";
   display: inline-block;
  
@@ -648,6 +653,19 @@ img {
   
   margin-left: 10px;
   background-image: url(../images/SmallIcon/IconSend.svg);
+}
+
+.form__submit--title {
+  color: var(--white-color);
+
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 
 .property {
@@ -677,8 +695,9 @@ img {
   padding-top: 48px;
 }
 
-.footer--active {
+.footer--form {
   display: flex;
+  align-items: flex-end;
   padding-bottom: 50px;
 }
 
