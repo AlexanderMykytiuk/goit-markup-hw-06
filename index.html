@@ -51,7 +51,7 @@
     <!--Секция №1 Герой-->
     <section class="hero">
       <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-      <a href="" class="hero__link">Заказать услугу</a>
+      <button class="hero__button" data-modal-open>Заказать услугу</button>
     </section>
     <!--Секция №2 Преимущества-->
     <section class="section no-padding">
@@ -407,6 +407,13 @@
       <p class="property">2020 &#x0007C; Developed by GoIT Students</p>
     </div>
   </footer>
+  <!-- Модальное окно -->
+  <div class="backdropd backdropd--hidden" data-modal>
+    <div class="backdrop__modal">
+      
+      <button data-modal-close>Закрыть</button>
+    </div>
+  </div>
+  <script src="./js/modal.js"></script>
 </body>
-
 </html>
