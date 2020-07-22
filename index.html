@@ -72,7 +72,7 @@
           </li>
           <li class="benefits__item">
             <div class="benefits__bg-icon">
-              <svg class="" width="70" height="70">
+              <svg width="70" height="70">
               <use href="./images/sprite.svg#clock"></use>
             </svg>
             </div>
@@ -84,7 +84,7 @@
           </li>
           <li class="benefits__item">
             <div class="benefits__bg-icon">
-              <svg class="" width="70" height="70">
+              <svg width="70" height="70">
               <use href="./images/sprite.svg#diagram"></use>
             </svg>
             </div>
@@ -96,7 +96,7 @@
           </li>
           <li class="benefits__item">
            <div class="benefits__bg-icon">
-              <svg class="" width="70" height="70">
+              <svg width="70" height="70">
               <use href="./images/sprite.svg#astronaut"></use>
             </svg>
            </div>
@@ -410,8 +410,27 @@
   <!-- Модальное окно -->
   <div class="backdropd backdropd--hidden" data-modal>
     <div class="backdrop__modal">
+      <button data-modal-close class="modal__button-clouse"></button>
+        <h1 class="modal__title">Оставьте свои данные, мы вам перезвоним</h1>
+      <div class="modal__field">
+        <label for="name" class="modal__label">Имя</label>
+        <input type="text" name="name" id="name" class="modal__input" autofocus >
+      </div>
+      <div class="modal__field">
+        <label for="tel" class="modal__label">Телефон</label>
+        <input type="tel" name="tel" id="tel" class="modal__input">
+      </div>
+      <div class="modal__field">
+        <label for="mail" class="modal__label">Почта</label>
+        <input type="email" name="mail" id="mail" class="modal__input">
+      </div>
+      <div class="modal__field">
+        <textarea name="comment" rows="10" placeholder="Комментарий" class="modal__textarea"></textarea>
+      </div>
       
-      <button data-modal-close>Закрыть</button>
+      <input type="checkbox" name="checkbox" id="checkbox" class="modal__input">
+      <label for="checkbox" class="modal__label">Соглашаюсь с рассылкой и принимаю <a href="" class="modal__label-link list">Условия договора</a></label>
+      <button type="submit"class="modal__button-submit">Отправить</button>
     </div>
   </div>
   <script src="./js/modal.js"></script>

@@ -660,14 +660,15 @@ img {
 }
 
 .form__submit--title {
+  display: flex;
+  align-items: center;
+
   color: var(--white-color);
 
   font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
 }
@@ -740,6 +741,12 @@ pointer-events: none;
   min-width: 528px;
   min-height: 581px;
 
+  padding-top: 40px;
+  /* padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 93px;
+  padding-bottom: 163px; */
+  
   background: #FFFFFF;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
@@ -748,7 +755,83 @@ pointer-events: none;
 
   transition: transform 250ms var(--timing-function);
 }
+
+.modal__button-clouse {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(30%, -25%);
+
+  width: 30px;
+  height: 30px;
+
+  background: #FFFFFF;
+  border-radius: 50%;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  border: none;
+
+  background-image: url(../images/SmallIcon/close-black.svg);
+background-repeat:no-repeat ;
+background-position: center;
+  cursor: pointer;
+}
   
+.modal__title {
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  margin-top: 0;
+}
+
+.modal__field {
+  display: flex;
+  flex-direction: column;
+   
+  width: 448px;
+
+  margin-left: 40px;
+  margin-right: 40px; 
+  margin-bottom: 28px;
+}
+ 
+.modal__label {
+  
+}
+
+.modal__input {
+  margin: 0;
+  padding: 12px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+ 
+  letter-spacing: 0.01em;
+}
+
+.modal__textarea {
+  resize: none;
+  padding: 16px 12px;
+}
+
+.modal__button-submit {
+  display: inline-block;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  padding: 10px 56px;
+
+  color: var(--white-color);
+  background-color: var(--accent-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  letter-spacing: 0.06em;
+
+  cursor: pointer;
+}
 
 .backdropd--hidden .backdrop__modal {
   transform: translate(-50%, -50%) scale(1.1);
