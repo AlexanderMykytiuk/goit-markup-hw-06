@@ -732,7 +732,7 @@ img {
   pointer-events: none;
 }
 
-.backdrop-modal {
+.backdrop__modal {
   position: absolute;
   top: 50%;
   left: 50%;
